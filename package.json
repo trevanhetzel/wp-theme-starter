@@ -8,7 +8,8 @@
     "url": "<url to git repo>"
   },
   "dependencies": {
-    "jquery": ""
+    "jquery": "",
+    "picturefill"
   },
   "devDependencies": {
     "browserify": "",
