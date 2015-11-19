@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "jquery": "",
-    "picturefill"
+    "picturefill": "",
+    "webfontloader": ""
   },
   "devDependencies": {
     "browserify": "",
