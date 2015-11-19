@@ -18,7 +18,7 @@ gulp.task('browserify', function () {
 
 // Sass
 gulp.task('styles', function () {
-  return gulp.src('./css/app.scss')
+  return gulp.src('./css/style.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 version', 'ie 8', 'ie 9'))
     .pipe(gulp.dest(''))
