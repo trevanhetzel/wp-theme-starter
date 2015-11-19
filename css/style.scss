@@ -1,0 +1,35 @@
+/*!
+Theme Name:
+Theme URI: 
+
+Author: Trevan Hetzel
+Author URI: http://hetzelcreative.com
+
+Version: 0.1
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ==========================================================================
+	Global
+========================================================================== */
+
+@import "global/variables";
+@import "global/mixins";
+@import "global/normalize";
+@import "global/base";
+@import "global/layout";
+
+
+/* ==========================================================================
+	Components
+========================================================================== */
+
+@import "components/header";
+
+
+/* ==========================================================================
+	Page specific components
+========================================================================== */
+

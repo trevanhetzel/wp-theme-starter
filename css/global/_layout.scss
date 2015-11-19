@@ -1,0 +1,38 @@
+// Inner container
+.contain {
+	@extend %clearfix;
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 0 1em;
+
+	@include breakpoint(medium) {
+		padding: 0 2em;
+	}
+}
+
+// Wrapper around content & sidebar
+.wrapper {
+	@extend .contain;
+	padding: 1em;
+
+	@include breakpoint(medium) {
+		padding: 3.75em 1em;
+	}
+}
+
+// Main content
+.content {
+	@include breakpoint(medium) {
+		float: left;
+		width: calc(73% + 1.25em);
+		margin: 0 0 0 -1.25em;
+	}
+}
+
+// Sidebar
+.sidebar {
+	@include breakpoint(medium) {
+		float: right;
+		width: 27%;
+	}
+}

@@ -1,0 +1,25 @@
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: $main;
+	color: $dark2;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
