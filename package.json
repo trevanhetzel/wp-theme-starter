@@ -1,24 +1,24 @@
 {
-  "name": "project-name",
-  "title": "Project Name",
-  "version": "1.0.0",
-  "description": "Repo for Project Name",
-  "repository": {
-    "type": "git",
-    "url": "<url to git repo>"
-  },
-  "dependencies": {
-    "jquery": "",
-    "picturefill": "",
-    "webfontloader": ""
-  },
-  "devDependencies": {
-    "browserify": "",
-    "gulp": "~3.9.0",
-    "gulp-autoprefixer": "",
-    "gulp-sass": "",
-    "gulp-uglify": "",
-    "vinyl-buffer": "",
-    "vinyl-source-stream": "~1.1.0"
-  }
+	"name": "project-name",
+	"title": "Project Name",
+	"version": "1.0.0",
+	"description": "Repo for Project Name",
+	"repository": {
+		"type": "git",
+		"url": "<url to git repo>"
+	},
+	"dependencies": {
+		"jquery": "",
+		"picturefill": "",
+		"webfontloader": ""
+	},
+	"devDependencies": {
+		"browserify": "",
+		"gulp": "~3.9.0",
+		"gulp-autoprefixer": "",
+		"gulp-sass": "",
+		"gulp-uglify": "",
+		"vinyl-buffer": "",
+		"vinyl-source-stream": "~1.1.0"
+	}
 }

@@ -11,15 +11,15 @@ require('picturefill');
 var webFont = require('webfontloader');
 
 WebFont.load({
-  google: {
-    families: [
-      'Droid Serif:400',
-      'Droid Serif:400italic',
-      'Droid Serif:700',
-      'Lato:400',
-      'Lato:700'
-    ]
-  }
+	google: {
+		families: [
+			'Droid Serif:400',
+			'Droid Serif:400italic',
+			'Droid Serif:700',
+			'Lato:400',
+			'Lato:700'
+		]
+	}
 });
 
 /**
