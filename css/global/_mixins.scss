@@ -28,3 +28,10 @@
 		content: "";
 	}
 }
+
+// State mixin
+@mixin state($class) {
+	&[class*='--#{$class}'] {
+		@content;
+	}
+}
