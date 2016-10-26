@@ -1,29 +1,17 @@
-'use strict';
-
 /**
- * Picturefill
+ * Entry file
  */
-require('picturefill');
 
-/**
- * Web font loader.
- */
-var webFont = require('webfontloader');
+import 'picturefill';
+import webFont from 'webfontloader';
+import exampleModule from './module/example-module';
 
-WebFont.load({
+webFont.load({
 	google: {
 		families: [
-			'Droid Serif:400',
-			'Droid Serif:400italic',
-			'Droid Serif:700',
-			'Lato:400',
-			'Lato:700'
+			'Droid Serif:400'
 		]
 	}
 });
 
-/**
- * Example module.
- * @see module:exampleModule
- */
-var mainNav = require('./module/example-module').init();
+exampleModule.init();

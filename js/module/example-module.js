@@ -1,12 +1,13 @@
 /**
- * Example module.
- * @module exampleModule
+ * Example module
  */
 
-'use strict';
+import $ from 'jquery';
 
-var $ = require('jquery');
+const exampleModule = {
+	init: function () {
+		console.log('Example module initialized!');
+	}
+};
 
-module.exports = {
-
-}
+export default exampleModule;

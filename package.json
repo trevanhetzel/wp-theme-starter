@@ -13,12 +13,15 @@
 		"webfontloader": ""
 	},
 	"devDependencies": {
-		"browserify": "",
-		"gulp": "~3.9.0",
-		"gulp-autoprefixer": "",
-		"gulp-sass": "",
-		"gulp-uglify": "",
-		"vinyl-buffer": "",
-		"vinyl-source-stream": "~1.1.0"
+		"babel-loader": "latest",
+		"babel-core": "latest",
+		"babel-preset-es2015": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-sass": "latest",
+		"vinyl-buffer": "latest",
+		"vinyl-source-stream": "latest",
+		"webpack": "latest",
+		"webpack-stream": "latest"
 	}
 }

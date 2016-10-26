@@ -1,5 +1,5 @@
-var browserify = require('browserify');
 var gulp = require('gulp');
+var webpack = require('webpack-stream');
 var source = require('vinyl-source-stream');
 var uglify = require('gulp-uglify');
 var buffer = require('vinyl-buffer');
@@ -7,11 +7,9 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 // Browserify
-gulp.task('browserify', function () {
-	return browserify('./js/app.js')
-		.bundle()
-		.pipe(source('bundle.js'))
-		.pipe(buffer())
+gulp.task('webpack', function () {
+	return gulp.src('./js/app.js')
+		.pipe(webpack(require('./webpack.config.js')))
 		.pipe(uglify())
 		.pipe(gulp.dest(''));
 });
@@ -26,7 +24,7 @@ gulp.task('styles', function () {
 
 // Watch
 gulp.task('watch', function () {
-	gulp.watch(['./js/**/*.js'], ['browserify']);
+	gulp.watch(['./js/**/*.js'], ['webpack']);
 	gulp.watch(['./css/**/*.scss'], ['styles']);
 	return;
 });
