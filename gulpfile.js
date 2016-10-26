@@ -6,7 +6,7 @@ var buffer = require('vinyl-buffer');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-// Browserify
+// Webpack
 gulp.task('webpack', function () {
 	return gulp.src('./js/app.js')
 		.pipe(webpack(require('./webpack.config.js')))
@@ -31,7 +31,6 @@ gulp.task('watch', function () {
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', [
-	'browserify',
 	'styles',
 	'watch'
 ]);
