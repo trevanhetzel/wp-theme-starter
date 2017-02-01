@@ -1,6 +1,6 @@
 ## Starter theme
 
-My starter WordPress theme. Using Gulp, Browserify, NPM (for dependencies available) and Sass.
+My starter WordPress theme. Using Webpack (for JS), Gulp (for CSS and to run Webpack easily) Yarn (for dependencies available) and Sass.
 
 ### Favicons
 
