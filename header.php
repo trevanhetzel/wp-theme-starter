@@ -11,8 +11,6 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon-144.png">
 
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-
 	<?php if (is_front_page()): ?>
 		<meta property="og:title" content="<?php echo get_bloginfo('description'); ?>">
 		<meta name="twitter:title" content="<?php echo get_bloginfo('description'); ?>">
@@ -34,4 +32,4 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
