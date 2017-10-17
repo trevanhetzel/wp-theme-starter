@@ -11,10 +11,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/* ==========================================================================
-	Global
-========================================================================== */
-
+// Global
 @import "global/variables";
 @import "global/mixins";
 @import "global/normalize";
@@ -22,14 +19,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "global/layout";
 
 
-/* ==========================================================================
-	Components
-========================================================================== */
-
+// Components
 @import "components/header";
-
-
-/* ==========================================================================
-	Page specific components
-========================================================================== */
 

@@ -1,37 +1,28 @@
-// Px to rem
-@mixin font-size($pxSize: 1) {
-	font-size: $pxSize + px;
-	font-size: ($pxSize / 16) + rem;
-}
-
 // Media queries
 @mixin breakpoint($size) {
 	@if $size == small {
 		@media (min-width: 30em) { @content; }
-	}
-	@else if $size == medium {
+	} @else if $size == medium {
 		@media (min-width: 50em) { @content; }
-	}
-	@else if $size == large {
+	} @else if $size == large {
 		@media (min-width: 64em) { @content; }
-	}
-	@else {
+	} @else {
 		@media (min-width: $size) { @content; }
 	}
 }
 
 // Clearfix
 %clearfix {
-	&:after {
+	&::after {
+		content: "";
 		display: table;
 		clear: both;
-		content: "";
 	}
 }
 
 // State mixin
 @mixin state($class) {
-	&[class*='--#{$class}'] {
+	&[class*="--#{$class}"] {
 		@content;
 	}
 }

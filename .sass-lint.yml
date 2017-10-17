@@ -1,3 +1,7 @@
+#   Sample Configs
+#     - https://github.com/sasstools/sass-lint/blob/develop/docs/sass-lint.yml
+#     - https://github.com/sasstools/gulp-sass-lint/blob/master/tests/.sass-lint.yml
+
 #   Sass Lint Rules
 #     - https://github.com/sasstools/sass-lint/tree/develop/docs/rules
 
@@ -9,7 +13,11 @@
 # File Options
 files:
   include:
-    - 'css/*.s+(a|c)ss'
+    - 'assets/styles/*.s+(a|c)ss'
+  ignore:
+    - 'dist/styles/**/*.css'
+    - 'assets/styles/_editor/*.s+(a|c)ss'
+    - 'assets/styles/_compatibility/*.s+(a|c)ss'
 
 # Rule Configuration
 rules:
@@ -33,7 +41,7 @@ rules:
   no-color-literals:
     - 0 # Search the styles folder for "FIXME: " and you'll find how many issues we have.
     -
-      allow-rgba: false
+      allow-rgba: true
 
   no-debug: 0
   no-ids: 0
