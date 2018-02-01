@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"outDir": "./",
+		"noImplicitAny": false,
+		"module": "es6",
+		"target": "es5",
+		"allowJs": true,
+		"baseUrl": ".",
+		"paths": {
+			"node_module_name": ["node_modules/name/dist"]
+		}
+	},
+	"include": [
+		"js/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
