@@ -55,7 +55,7 @@ module.exports = {
 				cssProcessor: require('cssnano'),
 				cssProcessorPluginOptions: {
 					preset: ['default', {
-						discardComments: { removeAll: true }
+						discardComments: { removeAllButFirst: false }
 					}]
 				}
 			})
