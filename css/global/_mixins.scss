@@ -11,15 +11,6 @@
 	}
 }
 
-// Clearfix
-%clearfix {
-	&::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}
-
 // State mixin
 @mixin state($class) {
 	&[class*="--#{$class}"] {

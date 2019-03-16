@@ -1,11 +1,10 @@
 // Inner container
 .contain {
-	@extend %clearfix;
 	margin: 0 auto;
-	padding: 0 1em;
-	max-width: 80em;
+	padding: 0 1rem;
+	max-width: 12.8rem;
 
 	@include breakpoint(medium) {
-		padding: 0 2em;
+		padding: 0 2rem;
 	}
 }
