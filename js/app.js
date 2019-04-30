@@ -1,6 +1,6 @@
 /**
  * Entry file
  */
-import exampleModule from './module/example-module';
+import exampleModule from './module/mobile-nav';
 
 exampleModule.init();

@@ -33,3 +33,6 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<header class="header">
+		<button class="header__hamburger"><span></span></button>
+	</header>
