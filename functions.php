@@ -7,6 +7,9 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 // Custom post types
 require get_template_directory() . '/inc/post-types.php';
 
+// Menus
+require get_template_directory() . '/inc/menus.php';
+
 // Enable post thumbnails
 require get_template_directory() . '/inc/thumbnails.php';
 
@@ -30,3 +33,13 @@ function starter_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'starter_styles' );
+
+// Theme path
+function path () {
+	print site_url('/wp-content/themes/wp-theme-starter');
+}
+
+// Site URL
+function url () {
+	print bloginfo('url');
+}
