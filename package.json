@@ -30,6 +30,6 @@
 		"uglifyjs-webpack-plugin": "^2.1.2",
 		"webpack": "^4.29.6",
 		"webpack-cli": "^3.3.0",
-		"yarn": "^1.13.0"
+		"yarn": "^1.17.3"
 	}
 }
