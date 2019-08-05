@@ -29,13 +29,7 @@ module.exports = {
 					{
 						loader: 'postcss-loader',
 						options: {
-							ident: 'postcss',
-							plugins: [require('autoprefixer')({
-								browsers: [
-									'Explorer >= 10',
-									'last 2 versions'
-								]
-							})]
+							ident: 'postcss'
 						}
 					},
 					'sass-loader'

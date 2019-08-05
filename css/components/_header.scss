@@ -29,8 +29,6 @@
 				height: .4rem;
 				background: $black;
 				transition: transform .2s;
-				-moz-transition: -moz-transform .2s;
-				-webkit-transition: -webkit-transform .2s;
 			}
 
 			&::before {
@@ -48,15 +46,11 @@
 
 				&::before {
 					top: -0.163rem;
-					-moz-transform: rotate(45deg);
-					-webkit-transform: rotate(45deg);
 					transform: rotate(45deg);
 				}
 
 				&::after {
 					bottom: -0.163rem;
-					-moz-transform: rotate(-45deg);
-					-webkit-transform: rotate(-45deg);
 					transform: rotate(-45deg);
 				}
 			}
