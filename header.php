@@ -34,5 +34,13 @@
 
 <body <?php body_class(); ?>>
 	<header class="header">
-		<button class="header__hamburger"><span></span></button>
+		<section class="contain">
+			<a href="<?php echo url(); ?>"><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/images/logo@2x.png" alt="" width="" height=""></a>
+
+			<nav class="header__nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-list', 'container' => '' ) ); ?>
+			</nav>
+
+			<button class="header__hamburger"><span></span></button>
+		</section>
 	</header>
