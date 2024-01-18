@@ -1,8 +1,8 @@
 /*!
-Theme Name:
+Theme Name: Von Skvely' Haus
 Theme URI:
 
-Author: Trevan Hetzel
+Author: Hetzel Creative
 Author URI: http://hetzelcreative.com
 
 Version: 0.1
@@ -11,13 +11,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-// Global
-@import "global/variables";
-@import "global/mixins";
-@import "global/normalize";
-@import "global/base";
-@import "global/layout";
+@import "global/normalize.scss";
+@import "global/base.scss";
 
-
-// Components
-@import "components/header";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

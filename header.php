@@ -18,29 +18,34 @@
 		<meta property="og:title" content="<?php the_title(); ?>">
 		<meta name="twitter:title" content="<?php the_title(); ?>">
 	<?php endif; ?>
-
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>">
-	<meta property="og:site_name" content="<?php wp_title(''); ?>">
-	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og.png">
-	<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@your_handle">
-	<meta name="twitter:description" content="<?php echo get_bloginfo('description'); ?>">
-
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-	<header class="header">
-		<section class="contain">
-			<a href="<?php echo url(); ?>"><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/images/logo@2x.png" alt="" width="" height=""></a>
-
-			<nav class="header__nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-list', 'container' => '' ) ); ?>
-			</nav>
-
-			<button class="header__hamburger"><span></span></button>
-		</section>
-	</header>
+		
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>">
+		<meta property="og:site_name" content="<?php wp_title(''); ?>">
+		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og.png">
+		<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
+		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@your_handle">
+		<meta name="twitter:description" content="<?php echo get_bloginfo('description'); ?>">
+		
+		<?php wp_head(); ?>
+	</head>
+		
+	<body <?php body_class(); ?>>
+		<header class="w-full">
+			<section class='max-w-7xl mx-auto'>
+				<a href="<?php echo url(); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo@2x.png" alt="" width="" height="">
+				</a>
+				
+				<nav>
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-list', 'container' => '' ) ); ?>
+				</nav>
+				
+				<button>
+					<span></span>
+				</button>
+			</section>
+		</header>
+		

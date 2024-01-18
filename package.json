@@ -1,38 +1,29 @@
 {
-	"name": "project-name",
-	"title": "Project Name",
+	"name": "von-skvely-haus",
+	"title": "Von Skvely Haus",
 	"version": "1.0.0",
-	"description": "Repo for Project Name",
+	"description": "Von Skvely Haus",
+	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "<url to git repo>"
 	},
 	"scripts": {
-		"build": "webpack --display-exclude --display-chunks",
-		"watch": "webpack --watch --progress --colors",
-		"eslint": "eslint js",
-		"sasslint": "sass-lint -c .sass-lint.yml 'css/**/*.scss' -v -q"
+		"build:esbuild": "npx esbuild ./js/app.js --target=esnext --bundle --outdir=./ --out-extension:.js=.min.js --minify",
+		"build:tailwind": "npx tailwindcss --postcss -i ./css/style.scss -c ./tailwind.config.js -o ./style.css --minify",
+		"build": "run-p \"build:**\"",
+		"watch:esbuild": "npm run build:esbuild -- --watch",
+		"watch:tailwind": "npm run build:tailwind -- --watch",
+		"watch": "run-p \"watch:**\""
 	},
 	"browserslist": [
 		"last 2 versions"
-  ],
+	],
 	"devDependencies": {
-		"@babel/core": "^7.5.5",
-		"@babel/preset-env": "^7.5.5",
-		"babel-eslint": "^10.0.2",
-		"babel-loader": "^8.0.6",
-		"css-loader": "^3.1.0",
-		"cssnano": "^4.1.10",
-		"mini-css-extract-plugin": "^0.8.0",
-		"node-sass": "^4.12.0",
-		"optimize-css-assets-webpack-plugin": "^5.0.3",
-		"postcss-loader": "^3.0.0",
-		"postcss-preset-env": "^6.7.0",
-		"sass-lint": "^1.13.1",
-		"sass-loader": "^7.1.0",
-		"uglifyjs-webpack-plugin": "^2.2.0",
-		"webpack": "^4.39.1",
-		"webpack-cli": "^3.3.6",
-		"yarn": "^1.22.0"
+		"esbuild": "^0.19.11",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.33",
+		"sass": "^1.69.7",
+		"tailwindcss": "^3.4.1"
 	}
 }
