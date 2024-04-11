@@ -1,0 +1,54 @@
+.nf-form-cont {
+  @apply mt-10;
+  @apply md:mt-16;
+}
+
+.nf-form-content label {
+  @apply !text-base;
+}
+
+.nf-form-content input {
+  @apply !bg-white;
+  @apply !text-black;
+}
+
+.nf-form-content textarea {
+  @apply !bg-white;
+  @apply !text-black;
+}
+
+.nf-form-content input[type=submit] {
+  @apply !h-auto;
+  @apply !p-5;
+  @apply !text-black;
+  @apply text-sm;
+  @apply md:text-base;
+  @apply !font-bold;
+  @apply !uppercase;
+  @apply cursor-pointer;
+  line-height: 1 !important;
+  --c1: #EFC06E;
+  --c2: #FADEAA;
+  background: linear-gradient(90deg, var(--c1), var(--c2) 51%, var(--c1)) var(--x, 0)/ 200% !important;
+  transition: all 0.5s;
+}
+
+.nf-form-content input[type=submit]:hover {
+  --x: 100%;
+}
+
+nf-fields-wrap {
+  @apply md:grid;
+  @apply md:grid-cols-2;
+  @apply md:gap-10;
+}
+
+nf-fields-wrap nf-field:last-child {
+  grid-column-start: 1;
+}
+
+.nf-field-label label {
+  @apply text-base;
+  @apply lg:text-lg;
+  @apply !font-extralight;
+}

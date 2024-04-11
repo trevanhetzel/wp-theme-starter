@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php
+/* Template Name: Home */
+get_header(); ?>
 
 <?php include( locate_template( 'partials/page-title.php' ) ); ?>
 

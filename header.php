@@ -3,34 +3,30 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php if(is_front_page() ) { ?> Site Title<?php } ?> <?php wp_title(''); ?> | <?php bloginfo('name'); ?></title>
+	<title><?php echo wp_get_document_title(); ?></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Vidaloka&display=swap" rel="stylesheet">
 
-	<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/favicon-152.png">
-	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon-32.png" sizes="32x32">
-	<link rel="shortcut icon" sizes="196x196" href="<?php echo get_template_directory_uri(); ?>/favicon-196.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/meta/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/meta/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/meta/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/meta/site.webmanifest">
 
-	<?php if (is_front_page()): ?>
-		<meta property="og:title" content="<?php echo get_bloginfo('description'); ?>">
-		<meta name="twitter:title" content="<?php echo get_bloginfo('description'); ?>">
-	<?php else: ?>
-		<meta property="og:title" content="<?php the_title(); ?>">
-		<meta name="twitter:title" content="<?php the_title(); ?>">
-	<?php endif; ?>
-		
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>">
-		<meta property="og:site_name" content="<?php wp_title(''); ?>">
-		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og.png">
-		<meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@your_handle">
-		<meta name="twitter:description" content="<?php echo get_bloginfo('description'); ?>">
-		
-		<?php wp_head(); ?>
-	</head>
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="<?php echo wp_get_document_title(); ?>">
+	<meta property="og:url" content="<?php echo wp_get_canonical_url(); ?>">
+	<meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>">
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/meta/og.jpg">
+	<meta property="og:image:width" content="2560">
+	<meta property="og:image:height" content="1451">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<?php wp_head(); ?>
+</head>
 		
 	<body <?php body_class(); ?>>
 		<header class="w-full">
