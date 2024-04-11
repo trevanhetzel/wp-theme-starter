@@ -1,13 +1,6 @@
 ## Starter theme
 
-My starter WordPress theme. Using Webpack for JS & Sass and Yarn for dependencies.
-
-### Yarn commands
-
-`yarn`
-`yarn watch`
-`yarn eslint`
-`yarn sasslint`
+My starter WordPress theme.
 
 ### Favicons
 
